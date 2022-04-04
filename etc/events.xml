@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+    <!-- Once payment is made-->
+    <event name="sales_order_invoice_register">
+        <observer name="OH_WhatsappQueue::notify_new_order" instance="OH\WhatsappQueue\Observer\Sales\Invoice\Create"/>
+    </event>
+
+    <event name="sales_order_shipment_save_after">
+        <observer name="OH_WhatsappQueue::notify_new_shipment" instance="OH\WhatsappQueue\Observer\Sales\Shipment\Create"/>
+    </event>
+</config>

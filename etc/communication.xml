@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Communication/etc/communication.xsd">
+    <topic name="wp.notify.new.order" request="Magento\AsynchronousOperations\Api\Data\OperationInterface" is_synchronous="false">
+        <handler name="wp.notify.new.order.consumer" type="OH\WhatsappQueue\Model\Queue\Handler\Consumer" method="execute"/>
+    </topic>
+
+    <topic name="wp.notify.new.shipment" request="Magento\AsynchronousOperations\Api\Data\OperationInterface" is_synchronous="false">
+        <handler name="wp.notify.new.shipment.consumer" type="OH\WhatsappQueue\Model\Queue\Handler\Consumer" method="execute"/>
+    </topic>
+</config>
