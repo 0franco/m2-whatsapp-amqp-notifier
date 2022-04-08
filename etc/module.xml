@@ -4,6 +4,7 @@
     <module name="OH_WhatsappQueue">
         <sequence>
             <module name="Magento_Sales"/>
+            <module name="Magento_AsynchronousOperations"/>
             <module name="OH_Core"/>
             <module name="OH_Whatsapp"/>
         </sequence>
