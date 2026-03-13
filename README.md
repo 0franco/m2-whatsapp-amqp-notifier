@@ -1,4 +1,4 @@
-# 📲 OH WhatsApp Queue
+# 📲 WhatsApp Queue for Magento 2
 
 > Asynchronous WhatsApp order notifications for Magento 2, powered by Twilio.
 
